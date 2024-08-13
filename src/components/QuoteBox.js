@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchQuote } from '../redux/actions';
+import '../App.css'
 
 const QuoteBox = () => {
   const dispatch = useDispatch();
