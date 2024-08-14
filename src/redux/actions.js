@@ -1,10 +1,30 @@
 export const FETCH_QUOTE = 'FETCH_QUOTE';
 
 export const fetchQuote = () => async (dispatch) => {
-  const response = await fetch('https://api.quotable.io/random');
-  const data = await response.json();
-  dispatch({
-    type: FETCH_QUOTE,
-    payload: data,
-  });
+  try {
+    const response = await fetch('https://quotes.rest/qod?category=inspire', {
+      headers: {
+        'Authorization': '7yCvvlWVEPhd2Egqq4YjJbbVznYztfPIqL5FkeOS',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const data = await response.json();
+
+    if (data.contents && data.contents.quotes && data.contents.quotes.length > 0) {
+      const { quote: text, author } = data.contents.quotes[0]; 
+      dispatch({
+        type: FETCH_QUOTE,
+        payload: { text, author },
+      });
+    } else {
+      console.error('No quotes found');
+    }
+  } catch (error) {
+    console.error('Failed to fetch quote:', error);
+  }
 };
+

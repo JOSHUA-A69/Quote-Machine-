@@ -1,21 +1,25 @@
 import { FETCH_QUOTE } from './actions';
 
 const initialState = {
-  quote: '',
-  author: '',
+  quote: {
+    text: '',
+    author: '',
+  },
 };
 
-const quoteReducer = (state = initialState, action) => {
+const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTE:
       return {
         ...state,
-        quote: action.payload.content,
-        author: action.payload.author,
+        quote: {
+          text: action.payload.content, 
+          author: action.payload.author, 
+        },
       };
     default:
       return state;
   }
 };
 
-export default quoteReducer;
+export default rootReducer;

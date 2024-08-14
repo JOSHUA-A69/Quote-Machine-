@@ -1,47 +1,29 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { connect } from 'react-redux';
+import '../redux/reducers'
 import { fetchQuote } from '../redux/actions';
-import '../App.css'
 
-const QuoteBox = () => {
-  const dispatch = useDispatch();
-  const { quote, author } = useSelector((state) => state);
-
+const QuoteBox = ({ quote, author, fetchQuote }) => {
   useEffect(() => {
-    dispatch(fetchQuote());
-  }, [dispatch]);
-
-  const handleNewQuote = () => {
-    dispatch(fetchQuote());
-  };
-
-  const tweetQuote = () => {
-    const tweet = `“${quote}” — ${author}`;
-    return `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}`;
-  };
+    fetchQuote();
+  }, [fetchQuote]);
 
   return (
-    <div id="quote-box" className="text-center p-4">
-      <div id="text">
-        <q>{quote}</q>
-      </div>
-      <div id="author" className="mt-2">
-        - {author}
-      </div>
-      <button id="new-quote" className="btn btn-primary mt-3" onClick={handleNewQuote}>
-        New Quote
-      </button>
-      <a
-        id="tweet-quote"
-        className="btn btn-info mt-3"
-        href={tweetQuote()}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Tweet Quote
-      </a>
+    <div className="quote-box">
+      <p>{quote}</p>
+      <p>- {author}</p>
+      <button onClick={fetchQuote}>New Quote</button>
     </div>
   );
 };
 
-export default QuoteBox;
+const mapStateToProps = (state) => ({
+  quote: state.quote.text, 
+  author: state.quote.author, 
+});
+
+const mapDispatchToProps = {
+  fetchQuote,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(QuoteBox);
