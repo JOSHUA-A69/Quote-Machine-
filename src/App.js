@@ -2,12 +2,13 @@ import React from 'react';
 import QuoteBox from './components/QuoteBox';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="App container d-flex justify-content-center align-items-center vh-100">
+    <div className="App">
+      <h1>Marvel Cinematic Universe Quotes</h1>
       <QuoteBox />
     </div>
   );
-};
+}
 
 export default App;

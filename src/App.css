@@ -1,66 +1,43 @@
-/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap'); /* Import MCU-style font */
 
-body {
-  background-color: #f4f4f9;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-#quote-box {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+.App {
   text-align: center;
+  margin-top: 50px;
+  background-color: #202020; /* Dark background color */
+  color: #f8f8f8; /* Light text color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#text {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #555;
+.quote-box {
+  background-color: #151515; /* Even darker box background */
+  padding: 30px;
+  border-radius: 10px;
+  color: #e6e6e6; /* Light grey text */
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5); /* Red shadow, reminiscent of MCU visuals */
+  font-family: 'Roboto Condensed', sans-serif; /* MCU-style font */
 }
 
-#author {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #777;
-  margin-top: 1rem;
+.quote-box p {
+  font-size: 1.7em;
 }
 
-#new-quote, #tweet-quote {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 4px;
-  font-size: 1rem;
+.quote-box button {
+  background-color: #d62828; /* Stark red button color */
+  color: #f8f8f8;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
+  margin-top: 25px;
   transition: background-color 0.3s ease;
 }
 
-#new-quote {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-}
-
-#new-quote:hover {
-  background-color: #0056b3;
-}
-
-#tweet-quote {
-  background-color: #1da1f2;
-  color: #ffffff;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-#tweet-quote:hover {
-  background-color: #0d8dd4;
+.quote-box button:hover {
+  background-color: #bb2124; /* Darker red on hover */
 }

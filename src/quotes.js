@@ -1,0 +1,22 @@
+export const quotes = [
+  { text: "I am Iron Man.", author: "Tony Stark" },
+  { text: "Avengers, assemble!", author: "Steve Rogers" },
+  { text: "With great power comes great responsibility.", author: "Uncle Ben" },
+  { text: "I can do this all day.", author: "Steve Rogers" },
+  { text: "I am inevitable.", author: "Thanos" },
+  { text: "We are Groot.", author: "Groot" },
+  { text: "I’ll do you one better: why is Gamora?", author: "Drax" },
+  { text: "Wakanda forever!", author: "T'Challa" },
+  { text: "I’m always angry.", author: "Bruce Banner" },
+  { text: "Dormammu, I’ve come to bargain.", author: "Doctor Strange" },
+  { text: "The hardest choices require the strongest wills.", author: "Thanos" },
+  { text: "I love you 3000.", author: "Tony Stark" },
+  { text: "You’re my mission.", author: "Bucky Barnes" },
+  { text: "I told you. You die for that.", author: "Thor" },
+  { text: "The truth is… I am Iron Man.", author: "Tony Stark" },
+  { text: "On your left.", author: "Sam Wilson" },
+  { text: "I’m just a kid from Brooklyn.", author: "Steve Rogers" },
+  { text: "Puny god.", author: "Hulk" },
+  { text: "Language!", author: "Steve Rogers" },
+  { text: "You get hurt, hurt 'em back. You get killed... walk it off.", author: "Steve Rogers" }
+];

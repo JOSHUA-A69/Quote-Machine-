@@ -10,16 +10,13 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTE:
-      console.log('Reducer state before update:', state);
-      const newState = {
+      return {
         ...state,
         quote: {
-          text: action.payload.text, 
+          text: action.payload.text,
           author: action.payload.author,
         },
       };
-      console.log('Reducer state after update:', newState);
-      return newState;
     default:
       return state;
   }
