@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Quote-Machine-/static/css/main.58e7df47.css",
-    "main.js": "/Quote-Machine-/static/js/main.174c6e6a.js",
+    "main.css": "/Quote-Machine-/static/css/main.4c4831c4.css",
+    "main.js": "/Quote-Machine-/static/js/main.f689584c.js",
     "index.html": "/Quote-Machine-/index.html",
-    "main.58e7df47.css.map": "/Quote-Machine-/static/css/main.58e7df47.css.map",
-    "main.174c6e6a.js.map": "/Quote-Machine-/static/js/main.174c6e6a.js.map"
+    "main.4c4831c4.css.map": "/Quote-Machine-/static/css/main.4c4831c4.css.map",
+    "main.f689584c.js.map": "/Quote-Machine-/static/js/main.f689584c.js.map"
   },
   "entrypoints": [
-    "static/css/main.58e7df47.css",
-    "static/js/main.174c6e6a.js"
+    "static/css/main.4c4831c4.css",
+    "static/js/main.f689584c.js"
   ]
 }
