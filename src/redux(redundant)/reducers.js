@@ -1,4 +1,4 @@
-import { FETCH_QUOTE } from './actions';
+/*import { FETCH_QUOTE } from './actions';
 
 const initialState = {
   quote: {
@@ -22,4 +22,4 @@ const rootReducer = (state = initialState, action) => {
   }
 };
 
-export default rootReducer;
+export default rootReducer;*/

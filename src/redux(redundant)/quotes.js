@@ -1,5 +1,5 @@
-// src/redux/mcuQuotes.js
-export const mcuQuotes = [
+
+/*export const mcuQuotes = [
     { text: "I am Iron Man.", author: "Tony Stark" },
     { text: "I can do this all day.", author: "Steve Rogers" },
     { text: "I am Groot.", author: "Groot" },
@@ -20,5 +20,6 @@ export const mcuQuotes = [
     { text: "We're the guardians of the galaxy.", author: "Peter Quill" },
     { text: "I choose to run towards my problems, and not away from them.", author: "Thor" },
     { text: "This is the fight of our lives.", author: "Steve Rogers" },
-  ];
+  ];*/
+  
   
