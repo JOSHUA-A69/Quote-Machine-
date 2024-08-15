@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Quote-Machine-/static/css/main.3a148341.css",
-    "main.js": "/Quote-Machine-/static/js/main.3a81f48e.js",
+    "main.js": "/Quote-Machine-/static/js/main.0592f28a.js",
     "static/js/453.7b3f9e5d.chunk.js": "/Quote-Machine-/static/js/453.7b3f9e5d.chunk.js",
     "static/media/fa-solid-900.ttf": "/Quote-Machine-/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/Quote-Machine-/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/Quote-Machine-/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Quote-Machine-/index.html",
     "main.3a148341.css.map": "/Quote-Machine-/static/css/main.3a148341.css.map",
-    "main.3a81f48e.js.map": "/Quote-Machine-/static/js/main.3a81f48e.js.map",
+    "main.0592f28a.js.map": "/Quote-Machine-/static/js/main.0592f28a.js.map",
     "453.7b3f9e5d.chunk.js.map": "/Quote-Machine-/static/js/453.7b3f9e5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a148341.css",
-    "static/js/main.3a81f48e.js"
+    "static/js/main.0592f28a.js"
   ]
 }
