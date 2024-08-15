@@ -8,6 +8,8 @@ const QuoteBox = ({ quote, author, fetchQuote }) => {
     fetchQuote();
   }, [fetchQuote]);
 
+  console.log('Rendered QuoteBox with:', { quote, author });
+
   return (
     <div className="quote-box">
       <p>{quote}</p>

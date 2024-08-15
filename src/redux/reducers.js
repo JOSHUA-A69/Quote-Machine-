@@ -2,7 +2,7 @@ import { FETCH_QUOTE } from './actions';
 
 const initialState = {
   quote: {
-    text: '',
+    text: 'Loading...',
     author: '',
   },
 };
@@ -10,16 +10,17 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_QUOTE:
-      return {
+      console.log('Reducer state before update:', state);
+      const newState = {
         ...state,
         quote: {
-          text: action.payload.content, 
-          author: action.payload.author, 
+          text: action.payload.text, 
+          author: action.payload.author,
         },
       };
+      console.log('Reducer state after update:', newState);
+      return newState;
     default:
       return state;
   }
 };
-
-export default rootReducer;

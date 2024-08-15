@@ -13,6 +13,8 @@ export const fetchQuote = () => async (dispatch) => {
     }
 
     const data = await response.json();
+    console.log('API Response:', data); // Log the response
+
 
     if (data.contents && data.contents.quotes && data.contents.quotes.length > 0) {
       const { quote: text, author } = data.contents.quotes[0]; 
