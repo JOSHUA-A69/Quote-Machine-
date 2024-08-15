@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // if you have global styles
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import QuoteBox from './components/QuoteBox';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <QuoteBox />
+  </Provider>,
   document.getElementById('root')
 );
-
-reportWebVitals();
