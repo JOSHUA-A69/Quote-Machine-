@@ -1,5 +1,5 @@
 import { FETCH_QUOTE } from './actions';
-import { quotes } from '../quotes';
+import { quotes } from '../quotes.json';
 
 const initialState = {
   currentQuote: quotes[0]
